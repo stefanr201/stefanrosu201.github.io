@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    {
+      "source": "/folio",
+      "destination": "/folio/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/folio/:path*",
+      "destination": "https://money-tracker-api-virid.vercel.app/folio/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/folio/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    }
+  ]
+}
