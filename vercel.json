@@ -1,12 +1,13 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/folio",
-      "destination": "/folio/",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
+      "destination": "https://money-tracker-api-virid.vercel.app/folio/login"
+    },
+    {
+      "source": "/folio/",
+      "destination": "https://money-tracker-api-virid.vercel.app/folio/login"
+    },
     {
       "source": "/folio/:path*",
       "destination": "https://money-tracker-api-virid.vercel.app/folio/:path*"
