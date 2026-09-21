@@ -1,6 +1,18 @@
 {
   "rewrites": [
     {
+      "source": "/moneypulse",
+      "destination": "https://money-tracker-api-virid.vercel.app/moneypulse"
+    },
+    {
+      "source": "/moneypulse/",
+      "destination": "https://money-tracker-api-virid.vercel.app/moneypulse"
+    },
+    {
+      "source": "/moneypulse/:path*",
+      "destination": "https://money-tracker-api-virid.vercel.app/moneypulse/:path*"
+    },
+    {
       "source": "/folio",
       "destination": "https://money-tracker-api-virid.vercel.app/folio/login"
     },
@@ -14,6 +26,19 @@
     }
   ],
   "headers": [
+    {
+      "source": "/moneypulse/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
+      ]
+    },
     {
       "source": "/folio/:path*",
       "headers": [
