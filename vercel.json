@@ -23,6 +23,14 @@
     {
       "source": "/folio/:path*",
       "destination": "https://money-tracker-api-virid.vercel.app/folio/:path*"
+    },
+    {
+      "source": "/raiffeisen-expense-report-briefing",
+      "destination": "/raiffeisen-expense-report-briefing.html"
+    },
+    {
+      "source": "/raiffeisen-expense-report-briefing/",
+      "destination": "/raiffeisen-expense-report-briefing.html"
     }
   ],
   "headers": [
