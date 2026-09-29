@@ -14,11 +14,11 @@
     },
     {
       "source": "/raiffeisen-expense-report-briefing",
-      "destination": "https://expense-briefing-stefan-201-r.vercel.app/"
+      "destination": "/raiffeisen-expense-report-briefing.html"
     },
     {
       "source": "/raiffeisen-expense-report-briefing/",
-      "destination": "https://expense-briefing-stefan-201-r.vercel.app/"
+      "destination": "/raiffeisen-expense-report-briefing.html"
     }
   ],
   "headers": [
